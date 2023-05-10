@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+      {!loading && <Nav />}
       <header className="App-header">
         {loading ? (<Loading />) : error ? (<Error message={error} />) : (<CharactersList />)}
       </header>

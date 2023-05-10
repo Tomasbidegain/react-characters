@@ -4,7 +4,7 @@ export const NavStyle = styled.nav`
   display: flex;
   justify-content: space-between;
   background-color: #282c34;
-  padding: 20px;
+  padding: 10px 140px;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 `;
