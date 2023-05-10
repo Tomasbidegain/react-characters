@@ -3,16 +3,19 @@ import React, { useEffect, useState } from "react";
 // Creo el contexto
 export const CharactersContext = React.createContext();
 
-// Creo el componente Provider para el contexto
+// Creo el componente CharactersProvider para el contexto
 export const CharactersProvider = ({ children }) => {
+
   //Estado para guardar los personajes
   const [characters, setCharacters] = useState([]);
 
   //Estado para manejar la carga de los personajes
   const [loading, setLoading] = useState(true);
+
   //Estado para manejar los errores
   const [error, setError] = useState(null);
 
+  //URL de la api a consumir
   const apiUrl = "https://swapi.dev/api/people/";
 
   const getCharacters = () => {
@@ -29,6 +32,7 @@ export const CharactersProvider = ({ children }) => {
       });
   };
 
+  //Este useEffect es para  hacer la peticion a la api cada vez que se renderiza el componente.
   useEffect(() => {
     getCharacters();
   }, []);

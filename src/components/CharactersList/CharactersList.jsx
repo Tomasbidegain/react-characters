@@ -4,7 +4,7 @@ import { ContentCharacters } from "./CharacterListStyled";
 import { CharactersContext } from "../../context/CharactersContext";
 
 const CharactersList = () => {
-  //Obtengo el character desde el contexto
+  //Obtengo el state character desde el contexto
   const { characters } = useContext(CharactersContext);
 
   return (
