@@ -1,11 +1,14 @@
-import { LoadingSpinner } from "./LoadingStyled";
+import { LoadingSpinner, SwordIcon } from "./LoadingStyled";
+import darthVader from  "../../assets/darth-vader.png"
 
 const Loading = () => {
   return (
-    <>
-      <LoadingSpinner />
-      Loading...
-    </>
+<>
+  <LoadingSpinner>
+      <SwordIcon src={darthVader} alt="Sword Icon" />
+    </LoadingSpinner>
+    Loading...
+</>
   );
 };
 

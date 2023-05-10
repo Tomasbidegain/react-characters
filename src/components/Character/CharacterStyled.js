@@ -12,6 +12,23 @@ export const Card = styled.div`
   margin: 10px;
 `;
 
+
+export const ImageContainer = styled.div`
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #ccc;
+`;
+
+export const Image = styled.img`
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+`;
+
 export const ContentCard = styled.div`
   display: flex;
   flex-direction: column;

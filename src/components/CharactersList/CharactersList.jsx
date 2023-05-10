@@ -9,7 +9,7 @@ const CharactersList = () => {
 
   return (
     <>
-      <h1>Characters information</h1>
+      <h1>Star Wars characters</h1>
       <ContentCharacters>
         {characters.length !== 0 ? (
           characters.map((character) => {
