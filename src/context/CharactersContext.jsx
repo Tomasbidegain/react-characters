@@ -39,7 +39,7 @@ export const CharactersProvider = ({ children }) => {
 
   return (
     <CharactersContext.Provider
-      value={{ characters, setCharacters, loading, error, getCharacters }}
+      value={{ characters, setCharacters, loading, error, getCharacters, setLoading }}
     >
       {children}
     </CharactersContext.Provider>

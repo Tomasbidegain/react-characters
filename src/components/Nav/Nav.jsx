@@ -5,10 +5,11 @@ import { CharactersContext } from "../../context/CharactersContext";
 const Nav = () => {
 
   //Obtengo la funcion getCharacters desde el contexto
-  const { getCharacters } = useContext(CharactersContext)
+  const { getCharacters, setLoading } = useContext(CharactersContext)
 
   //Funcion para recargar los personajes
   const reload = () => {
+    setLoading(true)
     getCharacters(true)
   }
 
